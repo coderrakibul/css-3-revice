@@ -1,0 +1,55 @@
+@keyframes ball {
+  0% {
+    top: 200px;
+    left: 25px;
+  }
+  50% {
+    top: 345px;
+    left: 250px;
+  }
+  100% {
+    top: 230px;
+    left: 460px;
+  }
+}
+
+.field {
+  width: 500px;
+  height: 300px;
+  border: 3px solid green;
+}
+.bar-1 {
+  height: 70px;
+  width: 20px;
+  background-color: red;
+  position: relative;
+  top: 120px;
+  left: 0px;
+}
+
+.bar-2 {
+  height: 70px;
+  width: 20px;
+  background-color: red;
+  position: relative;
+  top: 50px;
+  left: 480px;
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: blue;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  animation-name: ball;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-delay: 0.1s;
+  animation-timing-function: linear;
+  animation-fill-mode: scale;
+}
